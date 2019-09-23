@@ -13,11 +13,13 @@ login_manager.login_view = 'auth.login'
 bootstrap = Bootstrap()
 db = SQLAlchemy()
 photos = UploadSet('photos',IMAGES)
+mail = Mail()
 
 def create_app():
     app = Flask(__name__)
     bootstrap.init_app(app)
     db.init_app(app)
+    mail.init_app(app)
     configure_uploads(app,photos)
     app.config.from_object(DevConfig)
     login_manager.init_app(app)
