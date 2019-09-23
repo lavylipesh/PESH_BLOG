@@ -1,2 +1,2 @@
 Hello {{user.username}}
-Welcome 
+Welcome to PESHBLOG where you can read quotes and comment onthem
