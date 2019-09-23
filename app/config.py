@@ -4,6 +4,7 @@ class Config:
     SECRET_KEY='2wnd56mdj6hcmnc7cxn'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://lilibeth:1234@localhost/quotes'
     SQLALCHEMY_TRACK_MODIFICATIONS = True 
+     UPLOADED_PHOTOS_DEST ='app/static/photos'
 
 class ProdConfig(Config):
 
