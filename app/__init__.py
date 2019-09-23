@@ -17,6 +17,7 @@ def create_app():
     app = Flask(__name__)
     bootstrap.init_app(app)
     db.init_app(app)
+    configure_uploads(app,photos)
     app.config.from_object(DevConfig)
     login_manager.init_app(app)
     from app.auth import auth as auth_blueprint
