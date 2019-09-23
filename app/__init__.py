@@ -11,6 +11,7 @@ login_manager.login_view = 'auth.login'
 
 bootstrap = Bootstrap()
 db = SQLAlchemy()
+photos = UploadSet('photos',IMAGES)
 
 def create_app():
     app = Flask(__name__)
