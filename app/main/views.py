@@ -38,6 +38,7 @@ def update_profile(uname):
 
     return render_template('profile/update.html',form =form)
 
+
 @main.route('/user/<uname>/update/pic',methods= ['POST'])
 @login_required
 def update_pic(uname):
@@ -47,10 +48,7 @@ def update_pic(uname):
         path = f'photos/{filename}'
         user.profile_pic_path = path
         db.session.commit()
-        return redirect(url_for('main.profile',uname=uname))
-    
-    return render_template('profile/update.html',form =form)
-
+    return redirect(url_for('main.profile',uname=uname))
 
 @main.route('/blog',methods=['GET','POST'])
 @login_required
