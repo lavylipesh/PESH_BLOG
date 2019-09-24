@@ -21,3 +21,8 @@ This is a blog application where users are able to comment on posted blogs.Write
 ``psycopg2``
 # Set-Up instructions
 1. Git clone
+2. cd PESH_BLOG
+3. Make your contribution to my project
+
+# Contact Information
+If you want information on my projects please contact me at beth13lilib@gmail.com
