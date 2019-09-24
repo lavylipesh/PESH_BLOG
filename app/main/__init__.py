@@ -1,5 +1,5 @@
 from flask import Blueprint
 
-main = BLueprint('main',__name__)
+main = Blueprint('main',__name__)
 
-feom .views import *
+from . views import *

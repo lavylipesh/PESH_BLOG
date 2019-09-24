@@ -1,7 +1,43 @@
+{% extends 'base.html'  %}
+{% import 'bootstrap/wtf.html' as wtf%}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock%}
+
+{% block content %}
+
 <body>
     <h1>WELCOME TO PESH BLOGS</h1>
-        <p>{{quotes.author}}</p>
-        <p>{{quotes.quote}}</p>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card default-color" style="max-width: 20rem;">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>{{quotes.quote}}</p><br>
+                            <footer class="blockquote-footer">Quote by <cite title="Author">"{{quotes.author}}"</cite>
+                            </footer>
+                            
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            {% for blogs in my_blogs %}
+            <div class="col-md-12">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{blogs.author}}</h5>
+                        <p class="card-text">
+                            {{blogs.blog}}</p>
+                        <a href="{{url_for('main.blog_comment',blog_id=blogs.id)}}" class="btn btn-success">Comment</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {% endfor%}
 </body>
-    
+{% endblock %}

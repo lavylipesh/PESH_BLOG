@@ -8,11 +8,11 @@ class UpdateProfile(FlaskForm):
     submit = SubmitField('Submit')
 
 class BlogForm(FlaskForm):
-  title = StringField('Title',validators=[Required()])
-  pitch = TextAreaField('Write a blog',validators=[Required()])
+  author = StringField('Author',validators=[Required()])
+  blog = TextAreaField('Write a blog',validators=[Required()])
   submit = SubmitField('submit')
 
 class CommentForm(FlaskForm):
-  comments = TextAreaField('Your comment here',validators=[Required()])
+  comment = TextAreaField('Your comment here',validators=[Required()])
   author = StringField('Author',validators=[Required()])
   submit = SubmitField('submit')
