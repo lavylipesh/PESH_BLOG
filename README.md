@@ -6,9 +6,9 @@ This is a blog application where users are able to comment on posted blogs.Write
 
 # Screenshot
  <img src="https://github.com/lavylipesh/PESH_BLOG/blob/master/app/static/photos/Screenshot.png" width="1000">
-# Live link
+#  Live link
 You may view my project here:https://peshblog.herokuapp.com/
-# User stories
+#  User stories
 1. A user should be able to comment on posted blogs.
 2. A user should be able to view diffferent blogs on the landing page.
 3. A user should be able to view recent blogs
