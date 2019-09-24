@@ -14,3 +14,10 @@ This is a blog application where users are able to comment on posted blogs.Write
 7. A writer should be able to write new blogs
 8. A writer can delete a comment that they find insulting
 
+# Installation
+``python3.6``
+``flask``
+``SQLAlchemy``
+``psycopg2``
+# Set-Up instructions
+1. Git clone
