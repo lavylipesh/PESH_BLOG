@@ -11,8 +11,8 @@ class User(UserMixin,db.Model):
     username = db.Column(db.String(255),index=True)
     email = db.Column(db.String(255),unique = True,index=True)
     comment_id = db.Column(db.Integer,db.ForeignKey('comments.id'))
-    bio = db.Column(db.String(255))
-    profile_pic_path = db.Column(db.String())
+   # bio = db.Column(db.String(255))
+    #profile_pic_path = db.Column(db.String())
     password_secure = db.Column(db.String(255))
 
     @property
