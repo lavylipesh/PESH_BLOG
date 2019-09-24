@@ -26,3 +26,6 @@ This is a blog application where users are able to comment on posted blogs.Write
 
 # Contact Information
 If you want information on my projects please contact me at beth13lilib@gmail.com
+
+# Licence Information
+MIT Licence (c) Lilibeth Langat
