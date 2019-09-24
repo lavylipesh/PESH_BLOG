@@ -4,6 +4,9 @@ Lilibeth Langat
 # Description
 This is a blog application where users are able to comment on posted blogs.Writers can sign in to the application and write new blogs.Authors are allowed to delete commentsthe find insulting
 
+# Screenshot
+ <img src="https://github.com/lavylipesh/PESH_BLOG/blob/master/app/static/photos/Screenshot.png" width="1000">
+
 # User stories
 1. A user should be able to comment on posted blogs.
 2. A user should be able to view diffferent blogs on the landing page.
