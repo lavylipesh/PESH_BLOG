@@ -14,6 +14,17 @@ This is a blog application where users are able to comment on posted blogs.Write
 7. A writer should be able to write new blogs
 8. A writer can delete a comment that they find insulting
 
+# BDD
+1. User is taken to the landing page
+2. Comment button - allows user to make comments on a blog
+3. Writer is taken to the login page -- if not signed up they are allowed to sign_up
+4. Writer is allowed to write a blog after they are loggged in
+5. Writer can view their profile
+6. You may sign-out once you are done.
+
+# KNOWN BUGS
+Writer is unable to upload a photo for their profile pic
+
 # Installation
 ``python3.6``
 ``flask``
